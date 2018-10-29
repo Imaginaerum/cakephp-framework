@@ -1,0 +1,37 @@
+{
+    "name": "imaginaerum/cakephp-zeus",
+    "description": "CakePHP Framework.",
+    "authors": [
+        {
+            "name": "Kocet Sylvain",
+            "homepage": "https://github.com/Imaginaerum",
+            "role": "Creator"
+        }
+    ],
+    "homepage": "https://github.com/Imaginaerum/cakephp-zeus",
+    "license": "GPL-3.0-or-later",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.packagist.com/imaginaerum/"
+        },
+        {
+            "packagist.org": false
+        }
+    ],
+    "require": {
+        "php": ">=7",
+        "imaginaerum/cakephp-zeus-core": "dev-master"
+    },    
+    "autoload": {
+        "psr-4": {
+            "Zeus\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "php zeus config:seed"
+        ]
+    },
+    "minimum-stability": "stable"
+}
