@@ -30,7 +30,7 @@
     },
     "scripts": {
         "post-create-project-cmd": [
-            "php zeus config:seed"
+            "composer create-project --prefer-dist cakephp/app cakephp"
         ]
     },
     "minimum-stability": "stable"
