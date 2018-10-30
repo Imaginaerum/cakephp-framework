@@ -29,7 +29,7 @@
     },
     "scripts": {
         "post-create-project-cmd": [
-            "composer create-project --prefer-dist cakephp/app cakephp"
+            "composer create-project --prefer-dist cakephp/app cakephp && cd cakephp && composer config repositories.imaginaerum composer https://repo.packagist.com/imaginaerum/ && composer config repo.packagist.org false && composer require --dev imaginaerum/cakephp-zeus-core:dev-master"
         ]
     },
     "minimum-stability": "stable"
